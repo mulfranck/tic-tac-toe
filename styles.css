@@ -57,9 +57,10 @@ main #restart {
   font-weight: bold;
 }
 .game_board button {
+  font-size: 3rem;
   transition: all 0.7s;
 }
-.game_board button:hover {
+.game_board .btn:hover {
   background-color: rgb(62, 62, 88);
   opacity: 0.9;
 }
