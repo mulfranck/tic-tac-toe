@@ -31,12 +31,26 @@ const gameBoard = (() => {
     };
 })();
 
-// const PlayerFactory = (name) => {
-//   _name = "";
-//   _scores = 0;
-//   const _setScores = (score) => (_scores = score);
-//   const _setName = () => (_name = name);
+const PlayerFactory = (name, sign) => {
+    let _name = name;
+    let _scores = 0;
+    let _sign = sign;
+    const setScores = (score) => (_scores = score);
 
-//   //   what can player do? player can set his name, have a score of wins, wait for the other player,
-// };
+    // getters methods
+    const getName = () => _name;
+    const getSign = () => _sign;
+    const getScore = () => _scores;
+
+    return {
+        getName,
+        getSign,
+        getScore,
+        // setName,
+        // setSign,
+        setScores,
+    };
+};
+
+let mul = PlayerFactory("mul", "F");
 gameBoard.setBoard();
