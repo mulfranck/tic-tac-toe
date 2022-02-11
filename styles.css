@@ -22,14 +22,22 @@ header {
     width: 45rem;
     /* height: 10rem; */
     margin: auto;
-    background-color: aquamarine;
+    background-color: rgb(96, 194, 161);
     border-radius: 18px;
     /* border-top-left-radius: 18px; */
     padding-top: 1rem;
 }
-.game-board button {
+.game-board .btn {
     width: 5rem;
     height: 5rem;
+    color: rebeccapurple;
+    background-color: floralwhite;
+    border-radius: 4px;
+    border: 1px solid rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .game-board {
@@ -48,12 +56,13 @@ main {
     position: relative;
 }
 main .announcer {
-    background-color: black;
+    background-color: rgba(56, 117, 97, 0.63);
     color: floralwhite;
     position: absolute;
     width: 90%;
     height: 15rem;
-    right: 2rem;
+    right: 5%;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,21 +71,22 @@ main .announcer {
 main #restart {
     display: block;
     width: 100%;
-    background-color: rebeccapurple;
+    background-color: rgb(79, 48, 110);
     color: floralwhite;
 
     padding-bottom: 0.8rem;
     padding-top: 0.5rem;
+    border: none;
     border-end-end-radius: 18px;
-    font-size: large;
+    font-size: 1.3rem;
     font-weight: bold;
 }
-.game-board button {
+.game-board .btn {
     font-size: 3rem;
     transition: all 0.7s;
 }
 .game-board .btn:hover {
-    background-color: rgb(62, 62, 88);
+    background-color: rgb(201, 198, 193);
     opacity: 0.9;
 }
 

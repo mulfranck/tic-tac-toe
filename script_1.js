@@ -122,13 +122,14 @@ const gameControl = (() => {
     // display the end winner;
     const endGames = (winner) => {
         winner = winner || null; // if winner is passed use it else give winner null
+        _$board.ariaDisabled;
         let $main = document.querySelector("main");
         const $announcer = document.createElement("section");
         $announcer.classList.add("announcer");
         $announcer.addEventListener("click", () => {
             $announcer.classList.remove("announcer");
+            _resetGame();
             $announcer.remove();
-            _$board.ariaDisabled;
         });
 
         if (winner == null) {
@@ -136,7 +137,6 @@ const gameControl = (() => {
         } else {
             $announcer.textContent = `${winner}'s Won!`;
         }
-        _resetGame();
         $main.insertBefore($announcer, _$board);
     };
 
