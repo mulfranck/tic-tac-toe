@@ -1,77 +1,82 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 html,
 body {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 header,
 footer {
-  margin: 2rem;
-  text-align: center;
+    margin: 2rem;
+    text-align: center;
 }
 header {
-  display: flex;
+    display: flex;
 }
 .container {
-  width: 45rem;
-  /* height: 10rem; */
-  margin: auto;
-  background-color: aquamarine;
-  border-radius: 18px;
-  /* border-top-left-radius: 18px; */
-  padding-top: 1rem;
+    width: 45rem;
+    /* height: 10rem; */
+    margin: auto;
+    background-color: aquamarine;
+    border-radius: 18px;
+    /* border-top-left-radius: 18px; */
+    padding-top: 1rem;
 }
 .game-board button {
-  width: 5rem;
-  height: 5rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .game-board {
-  /* width: 600px; */
-  display: grid;
-  margin: 1rem auto;
+    /* width: 600px; */
+    display: grid;
+    margin: 1rem auto;
 
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 main #restart {
-  display: block;
-  width: 100%;
-  background-color: rebeccapurple;
-  color: floralwhite;
+    display: block;
+    width: 100%;
+    background-color: rebeccapurple;
+    color: floralwhite;
 
-  padding-bottom: 0.8rem;
-  padding-top: 0.5rem;
-  border-end-end-radius: 18px;
-  font-size: large;
-  font-weight: bold;
+    padding-bottom: 0.8rem;
+    padding-top: 0.5rem;
+    border-end-end-radius: 18px;
+    font-size: large;
+    font-weight: bold;
 }
 .game-board button {
-  font-size: 3rem;
-  transition: all 0.7s;
+    font-size: 3rem;
+    transition: all 0.7s;
 }
 .game-board .btn:hover {
-  background-color: rgb(62, 62, 88);
-  opacity: 0.9;
+    background-color: rgb(62, 62, 88);
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 765px) {
-  .container {
-    width: 90%;
-  }
+    .container {
+        width: 90%;
+    }
+
+    .game-board button {
+        width: 4rem;
+        height: 4rem;
+    }
 }
 @media screen and (max-width: 665px) {
-  .container {
-    width: 95%;
-  }
+    .container {
+        width: 95%;
+    }
 }

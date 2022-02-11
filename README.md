@@ -27,9 +27,7 @@ The game controller seems to be the main thing in this whole setup
 
 -   Should have a flip_player method to change players.
 -   should have win checkers, which adds to player a win score and a break of game.
-    -   row wins,
-    -   col wins,
-    -   diagonal wins, and
+    -   winner
     -   ties.
 -   handle a game:
     -   play while no winner or tie
