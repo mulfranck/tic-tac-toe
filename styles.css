@@ -27,12 +27,12 @@ header {
   /* border-top-left-radius: 18px; */
   padding-top: 1rem;
 }
-.game_board button {
+.game-board button {
   width: 5rem;
   height: 5rem;
 }
 
-.game_board {
+.game-board {
   /* width: 600px; */
   display: grid;
   margin: 1rem auto;
@@ -56,11 +56,11 @@ main #restart {
   font-size: large;
   font-weight: bold;
 }
-.game_board button {
+.game-board button {
   font-size: 3rem;
   transition: all 0.7s;
 }
-.game_board .btn:hover {
+.game-board .btn:hover {
   background-color: rgb(62, 62, 88);
   opacity: 0.9;
 }
