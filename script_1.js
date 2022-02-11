@@ -125,13 +125,18 @@ const gameControl = (() => {
         let $main = document.querySelector("main");
         const $announcer = document.createElement("section");
         $announcer.classList.add("announcer");
+        $announcer.addEventListener("click", () => {
+            $announcer.classList.remove("announcer");
+            $announcer.remove();
+            _$board.ariaDisabled;
+        });
 
         if (winner == null) {
             $announcer.textContent = `Its a Draw! ;(`;
         } else {
             $announcer.textContent = `${winner}'s Won!`;
         }
-
+        _resetGame();
         $main.insertBefore($announcer, _$board);
     };
 

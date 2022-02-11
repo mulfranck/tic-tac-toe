@@ -42,8 +42,23 @@ header {
 
     align-items: center;
     justify-content: center;
+    /* z-index: 1; */
 }
-
+main {
+    position: relative;
+}
+main .announcer {
+    background-color: black;
+    color: floralwhite;
+    position: absolute;
+    width: 90%;
+    height: 15rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
 main #restart {
     display: block;
     width: 100%;
